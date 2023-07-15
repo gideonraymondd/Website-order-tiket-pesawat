@@ -1,0 +1,27 @@
+input {
+    border: 1.5px solid #030337;
+    border-radius: 4px;
+    padding: 7px 30px;
+}
+input[type=submit] {
+    background-color: #030337;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 45px;
+    margin: 0px 390px
+}
+table {
+ border-collapse: collapse; 
+ margin-left: 1%;
+ width: 80%;
+}
+tr/*:nth-child(3)*/ {
+ border: solid thin;
+ margin-left: 10%;
+ padding-left: 6%;
+}
+td{
+    text-align: center;
+    margin-left: 10%;
+    padding-left: 2%;
+}

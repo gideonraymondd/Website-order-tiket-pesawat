@@ -1,0 +1,21 @@
+Fitur:
+login 
+register 
+order ticket
+view ticket yang sudah di order
+add ticket (admin)
+search ticket 
+delete ticket (admin)
+admin view by pesawat (melihat penerbangan oleh admin)
+Anggota:
+Aditya Bima Sadewa - C14200012
+Gideon Raymond - c14200014
+Albert Amadeus - C14200168
+Axell Brillian Satriatama- C14200194
+Ardon Yunors Tallan - C14200203
+Revisi:
+admin:login_page_admin
+md5:password cust udh di hashing
+javascript:jam pada custhomepage
+tanggal:format pada semua table udh d-m-y
+

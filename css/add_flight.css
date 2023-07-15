@@ -1,0 +1,16 @@
+input {
+    border: 1.5px solid #030337;
+    border-radius: 4px;
+    padding: 7px 30px;
+}
+input[type=submit] {
+    background-color: #030337;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 45px;
+    margin: 0px 200px
+}
+form{
+    
+    margin-left: 5%;
+}

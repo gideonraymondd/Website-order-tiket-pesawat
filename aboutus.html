@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+<body>
+
+<!-- Navbar -->
+<div>
+  <ul>
+    <li><a href="index.html"><i ></i> Home</a></li>
+    <li><a href="login_page.php"><i ></i> Book Tickets</a></li>
+    <li><a href="aboutus.html"><i></i> About Us</a></li>
+    <li><a href="login_page.php"><i ></i> Login</a></li>
+  </ul>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">About Us</h2>
+    <p class="w3-opacity"><i>Travel With Us</i></p>
+    <p class="w3-justify"> Selama menempuh di semester 3 dalam pihak team developer yang beranggotakan 5 orang membuat sebuah website pemesanan tiket pesawat, dengan menggunakan fitur html,css,database dan lain-lain. Kami membuat website ini bertujuan untuk menyediakan layanan pembelian atau pemesanan tiket pesawat dan sekaligus menyelesaikan tugas proyek dari mata kuliah Teknologi Web. Kami akan memperkenalkan masing-masing orang yang sudah berkontribusi dibawah ini.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-semiquarter">
+        <p>Albat</p>
+        <img src="https://cdn.discordapp.com/attachments/752172122276888638/916544891771834368/1633280813000.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        
+        </div>
+      <div class="w3-quarter">
+        <p>Bima</p>
+        <img src="https://cdn.discordapp.com/avatars/337067477764800514/1197079f134a11ff72a915b1d54c2e35.png?size=256" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        
+        </div>
+      <div class="w3-quarter">
+        <p>Ardon</p>
+        <img src="https://cdn.discordapp.com/avatars/739487406457225296/ad8e353e9154c7843d075c4c096a8701.png?size=256" class="w3-round" alt="Random Name" style="width:60%">
+       
+        </div>
+      <div class="w3-quarter">
+        <p>Axell</p>
+        <img src="https://cdn.discordapp.com/avatars/348824118247817220/f4c80ddc797436f1835d4a2f225b05af.png?size=256" class="w3-round" alt="Random Name" style="width:60%">
+       
+        </div>
+      <div class="w3-quarter">
+        <p>Gideon</p>
+        <img src="https://cdn.discordapp.com/avatars/475147024367353866/ef0edaea03cdba8cc31c9132645ce8ee.png?size=256" class="w3-round" alt="Random Name" style="width:60%">
+  
+            </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
